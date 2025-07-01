@@ -73,10 +73,6 @@ const siteConfig: SiteConfig = {
             text: 'Contact',
             href: '/contact'
         },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
