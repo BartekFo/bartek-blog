@@ -11,9 +11,9 @@ const hero = siteConfig.hero;
         <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
             {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{hero.title}</h1>}
             {hero.image?.src && (
-                <figure class="h-200 overflow-hidden">
+                <figure class="h-150 overflow-hidden grid place-items-center bg-[#101114]">
                     <img
-                        class="w-full h-full object-cover object-top"
+                        class="w-1/2 object-cover object-top"
                         src={hero.image.src}
                         loading="lazy"
                         decoding="async"
