@@ -34,7 +34,7 @@ export type SiteConfig = {
     hero?: Hero;
     subscribe?: Subscribe;
     postsPerPage?: number;
-    projectsPerPage?: number;
+    // projectsPerPage?: number;
 };
 
 const siteConfig: SiteConfig = {
@@ -51,10 +51,10 @@ const siteConfig: SiteConfig = {
             text: 'Home',
             href: '/'
         },
-        {
-            text: 'Projects',
-            href: '/projects'
-        },
+        // {
+        //     text: 'Projects',
+        //     href: '/projects'
+        // },
         {
             text: 'Blog',
             href: '/blog'
@@ -76,7 +76,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Bartek Fórmanowski**, sharing my journey building software and learning new technologies. I write about the problems I solve, the tools I discover, and the lessons I learn along the way. Check out my projects on <a href='https://github.com/BartekFo'>GitHub</a> or connect with me on <a href='https://www.linkedin.com/in/bformanowski/'>LinkedIn</a>.",
+        text: "I'm **Bartek Fórmanowski**, sharing my journey building software and learning new technologies. I write about the problems I solve, the tools I discover, and the lessons I learn along the way. Check out my work on <a href='https://github.com/BartekFo'>GitHub</a> or connect with me on <a href='https://www.linkedin.com/in/bformanowski/'>LinkedIn</a>.",
         image: {
             src: '/hero.png',
             alt: 'A person sitting at a desk in front of a computer'
@@ -93,8 +93,8 @@ const siteConfig: SiteConfig = {
         text: 'One update per week. All the latest posts directly in your inbox.',
         formUrl: '#'
     },
-    postsPerPage: 8,
-    projectsPerPage: 8
+    postsPerPage: 8
+    // projectsPerPage: 8
 };
 
 export default siteConfig;
