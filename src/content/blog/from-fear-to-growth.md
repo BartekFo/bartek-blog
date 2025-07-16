@@ -10,13 +10,13 @@ tags:
   - Soft Skills
 seo:
   image:
-    src: '/post-1.jpg'
-    alt: A person standing at the window
+    src: '/do-what-scares-you.jpg'
+    alt: Photo of caption saying "Do what scares you"
 ---
 
-![A person standing at the window](/post-1.jpg)
+![Photo of caption saying "Do what scares you"](/do-what-scares-you.jpg)
 
-<div class="text-xs">Photo by <a href="https://unsplash.com/@franku84?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vadim Bogulov</a> on <a href="https://unsplash.com/photos/a-person-standing-in-front-of-a-giant-spider-9kbNYzo1XtQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+<div class="text-xs">Photo by <a href="https://unsplash.com/@dvh_mmphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniel Velásquez</a> on <a href="https://unsplash.com/photos/a-lighted-sign-that-says-do-what-scared-you-vJ2sZzL1wSc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
 
 We all have it.
 
