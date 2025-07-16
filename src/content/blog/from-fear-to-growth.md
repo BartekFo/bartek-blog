@@ -32,7 +32,7 @@ This isn’t a post with motivational quotes or generic advice. This is a real s
 
 ### The Comfort Zone is a Dangerous Place
 
-Before I tell my stories, let’s talk about that fear. It often comes from something called “imposter syndrome”—that nagging feeling that you don’t really deserve your job or accomplishments, and that any minute now, someone will find out you’re a fraud.
+Before I tell my stories, let’s talk about that fear. It often comes from something called “impostor syndrome”—that nagging feeling that you don’t really deserve your job or accomplishments, and that any minute now, someone will find out you’re a fraud.
 
 It’s a feeling that pushes us to stay where we are comfortable because the risk of being “discovered” feels too high. But I’ve learned that the comfort zone isn’t safe. It’s a place where growth stops. The real risk is in never leaving it.
 
