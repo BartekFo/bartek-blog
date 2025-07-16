@@ -79,7 +79,7 @@ const siteConfig: SiteConfig = {
         text: "I'm **Bartek Fórmanowski**, sharing my journey building software and learning new technologies. I write about the problems I solve, the tools I discover, and the lessons I learn along the way. Check out my work on <a href='https://github.com/BartekFo'>GitHub</a> or connect with me on <a href='https://www.linkedin.com/in/bformanowski/'>LinkedIn</a>.",
         image: {
             src: '/hero.png',
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'A person standing on dark background'
         },
         actions: [
             {
