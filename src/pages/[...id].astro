@@ -3,13 +3,13 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-    const pages = await getCollection('pages');
-    return pages.map((page) => {
-        return {
-            params: { id: page.id },
-            props: { page }
-        };
-    });
+  const pages = await getCollection('pages');
+  return pages.map((pageEntry) => {
+    return {
+      params: { id: pageEntry.id },
+      props: { page: pageEntry },
+    };
+  });
 }
 
 type Props = { page: CollectionEntry<'pages'> };

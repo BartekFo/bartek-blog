@@ -1,26 +1,31 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import PostPreview from '../../components/PostPreview.astro';
-import { sortItemsByDateDesc } from '../../utils/data-utils';
+import Subscribe from '../../components/Subscribe.tsx';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { slugify } from '../../utils/common-utils';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
 
 export async function getStaticPaths() {
-    const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-    const postCount = posts.length;
-    return posts.map((post, index) => ({
-        params: { id: post.id },
-        props: {
-            post,
-            prevPost: index + 1 !== postCount ? posts[index + 1] : null,
-            nextPost: index !== 0 ? posts[index - 1] : null
-        }
-    }));
+  const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+  const postCount = posts.length;
+  return posts.map((singlePost, index) => ({
+    params: { id: singlePost.id },
+    props: {
+      post: singlePost,
+      prevPost: index + 1 !== postCount ? posts[index + 1] : null,
+      nextPost: index !== 0 ? posts[index - 1] : null,
+    },
+  }));
 }
 
-type Props = { post: CollectionEntry<'blog'>; prevPost: CollectionEntry<'blog'>; nextPost: CollectionEntry<'blog'> };
+type Props = {
+  post: CollectionEntry<'blog'>;
+  prevPost: CollectionEntry<'blog'>;
+  nextPost: CollectionEntry<'blog'>;
+};
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
@@ -64,6 +69,10 @@ const { Content } = await render(post);
             <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">Share</Button>
         </div>
     </article>
+    
+    <!-- Newsletter Subscription -->
+    <Subscribe />
+    
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
