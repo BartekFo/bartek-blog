@@ -1,0 +1,34 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules/**",
+      "!**/.vercel/**",
+      "!**/dist/**",
+      "!**/build/**",
+      "!**/.astro/**",
+      "!**/coverage/**",
+      "!**/.next/**",
+      "!**/.nuxt/**",
+      "!**/public/assets/**",
+      "!**/*.generated.js"
+    ]
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUnusedImports": "off",
+        "noUnusedVariables": "off"
+      },
+      "style": {
+        "useFilenamingConvention": "off"
+      },
+      "nursery": {
+        "noUnknownAtRule": "off",
+        "noShadow": "off"
+      }
+    }
+  },
+  "extends": ["ultracite"]
+}
