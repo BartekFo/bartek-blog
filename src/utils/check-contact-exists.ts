@@ -7,8 +7,8 @@ export async function checkContactExists(email: string): Promise<boolean> {
     });
 
     // Check if response has data and it's an array
-    if (response.data && Array.isArray(response.data)) {
-      return response.data.some(
+    if (response.data?.data && Array.isArray(response.data.data)) {
+      return response.data.data.some(
         (contact: { email?: string }) => contact.email === email
       );
     }

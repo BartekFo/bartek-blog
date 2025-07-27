@@ -60,7 +60,7 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
     if (contactExists) {
       return Response.json(
         {
-          message: 'You are already subscribed to our newsletter',
+          message: 'You are already subscribed to this newsletter. Thank you!',
         },
         { status: 409 }
       );

@@ -103,10 +103,19 @@ export default function Subscribe() {
       if (response.ok) {
         handleSuccess(data.message || 'Successfully subscribed!');
       } else {
-        const errorMsg =
-          response.status === 429
-            ? 'Too many requests. Please try again later.'
-            : data.error || 'Subscription failed. Please try again.';
+        let errorMsg: string;
+        switch (response.status) {
+          case 429:
+            errorMsg = 'Too many requests. Please try again later.';
+            break;
+          case 409:
+            errorMsg =
+              data.message ||
+              'You are already subscribed to this newsletter. Thank you!';
+            break;
+          default:
+            errorMsg = data.error || 'Subscription failed. Please try again.';
+        }
         handleError(errorMsg);
       }
     } catch (error) {
