@@ -1,62 +1,126 @@
 export const getWelcomeEmailTemplate = () => `
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bartek Blog</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Newsreader', 'Noto Sans', sans-serif;
+        background-color: #ffffff;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+      
+      .content-wrapper {
+        padding: 20px;
+      }
+      
+      .hero-image {
+        width: 100%;
+        height: 218px;
+        background-image: url('https://www.bartoszformanowski.engineer/email-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      
+      .title {
+        color: #141414;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        margin: 20px 0 12px 0;
+        padding: 0 16px;
+      }
+      
+      .description {
+        color: #141414;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin: 4px 0 12px 0;
+        padding: 0 16px;
+      }
+      
+      .button-container {
+        text-align: center;
+        padding: 12px 16px;
+      }
+      
+      .cta-button {
+        display: inline-block;
+        min-width: 84px;
+        max-width: 480px;
+        height: 40px;
+        padding: 0 16px;
+        background-color: #7f7f7f;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+        letter-spacing: 0.015em;
+      }
+      
+      .cta-button:hover {
+        background-color: #6b6b6b;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        .content-wrapper {
+          padding: 12px;
+        }
+        
+        .title {
+          font-size: 24px;
+          padding: 0 8px;
+        }
+        
+        .description {
+          font-size: 14px;
+          padding: 0 8px;
+        }
+        
+        .button-container {
+          padding: 12px 8px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
-      style="font-family: Newsreader, &quot;Noto Sans&quot;, sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div
-            class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1"
-          >
-            <div class="@container">
-              <div class="@[480px]:px-4 @[480px]:py-3">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-lg min-h-[218px]"
-                  style="
-                    background-image: url(&quot;https://www.bartoszformanowski.engineer/email-bg.png&quot;);
-                  "
-                ></div>
-              </div>
-            </div>
-            <h2
-              class="text-[#141414] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5"
-            >
-              Welcome to Bartek Blog!
-            </h2>
-            <p
-              class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center"
-            >
-              I'm thrilled to have you join my community of readers. My blog is
-              dedicated to providing insightful articles on a variety of topics,
-              from technology and innovation to lifestyle and personal growth. I
-              hope you find my content engaging and valuable.
-            </p>
-            <div class="flex px-4 py-3 justify-center">
-              <a
-                href="https://www.bartoszformanowski.engineer/blog"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#7f7f7f] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">View Latest Posts</span>
-              </a>
-            </div>
-          </div>
+    <div class="email-container">
+      <div class="content-wrapper">
+        <div class="hero-image"></div>
+        <h2 class="title">Welcome to Bartek Blog!</h2>
+        <p class="description">
+          I'm thrilled to have you join my community of readers. My blog is
+          dedicated to providing insightful articles on a variety of topics,
+          from technology and innovation to lifestyle and personal growth. I
+          hope you find my content engaging and valuable.
+        </p>
+        <div class="button-container">
+          <a href="https://www.bartoszformanowski.engineer/blog" class="cta-button">
+            View Latest Posts
+          </a>
         </div>
       </div>
     </div>
