@@ -5,9 +5,10 @@ export const getWelcomeEmailTemplate = () => `
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Bartek Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap');
-      
       body {
         margin: 0;
         padding: 0;
@@ -71,7 +72,7 @@ export const getWelcomeEmailTemplate = () => `
         height: 40px;
         padding: 0 16px;
         background-color: #7f7f7f;
-        color: #ffffff;
+        color: #ffffff !important;
         font-size: 14px;
         font-weight: 700;
         line-height: 40px;

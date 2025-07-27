@@ -1,6 +1,7 @@
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 import type { APIRoute } from 'astro';
+import { checkContactExists } from '../../utils/check-contact-exists';
 import { createContact } from '../../utils/create-contact';
 import { sendWelcomeEmail } from '../../utils/send-welcome-email';
 import { validateTurnstile } from '../../utils/validate-turnstile';
@@ -51,6 +52,17 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
       return Response.json(
         { error: 'Unsuccessful verification. Try again later.' },
         { status: 400 }
+      );
+    }
+
+    const contactExists = await checkContactExists(email);
+
+    if (contactExists) {
+      return Response.json(
+        {
+          message: 'You are already subscribed to our newsletter',
+        },
+        { status: 409 }
       );
     }
 
