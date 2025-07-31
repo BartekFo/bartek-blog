@@ -37,7 +37,7 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-  website: 'https://example.com',
+  website: 'https://bartoszformanowski.engineer',
   title: 'Bartek Fórmanowski',
   subtitle: 'Product Engineer',
   description:
