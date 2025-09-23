@@ -3,41 +3,16 @@ title: About
 seo:
   title: About Me
   description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
-  image:
-    src: '/about.jpeg'
-    alt: A person sitting at a desk in front of a computer
 ---
 
-![Alt text for image](/about.jpeg)
+## Web developer from Poland
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+**Greetings!** I'm Bartosz Fórmanowski, a passionate web developer.
 
-## Ethan Donovan - Web Developer based in Estonia
+Everyone has a story. Mine doesn't start with a flash of genius, but with a quiet voice of doubt in a school hallway. At 17, taking my first steps into programming, I felt like I was late to a party that was already in full swing.
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+However, that uncertainty turned out to be my greatest strength. Instead of blindly chasing technical perfection, I had to learn something more important: technology is made by people, for people. My career took off when I understood that the most important thing isn't the lines of code, but the conversations that lead to them.
 
-## Skills and Expertise
+I realized that my experience—balancing the world of code with the world of human relationships—is a unique asset. And that's what I want to share here.
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
-
-## Innovation and Problem-Solving
-
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
-
-## Global Perspective, Local Impact
-
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
-
-## Continuous Learning
-
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
-
-## Collaboration and Communication
-
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
-
-## Get in Touch
-
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
-
-_Let's build something amazing together!_
+This blog is the result of my journey. Here, you'll find my thoughts on teamwork, how to approach new technologies, and building a career in IT on your own terms. It's a space for everyone who believes that behind every great project is not just great code, but above all, great collaboration.
