@@ -15,8 +15,6 @@ seo:
     alt: "A developer looking at code on a screen with a subtle AI overlay, representing the balance between human understanding and AI assistance."
 ---
 
-# The Trap of AI Illusion
-
 It's been a while since my last blog post. The holidays came and went, leading to a small break that turned into a much longer one. This break taught me a few things.
 
 It showed me how **difficult it is to build a consistent habit** and how quickly it can disappear once you step away from it. I also realized that writing valuable articles on a weekly basis is too frequent and hard to maintain alongside my daily responsibilities.
